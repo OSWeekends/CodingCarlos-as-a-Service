@@ -9,6 +9,47 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="html5lightbox/jquery.js"></script>
+<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+<script type="text/javascript" src="html5lightbox/froogaloop2.min.js"></script>
+
+
+<!--IMPORTING STYLES FOR HTML5BOXES -->
+
+<style type="text/css">
+.lightboxcontainer {
+  width:100%;
+  text-align:left;
+}
+.lightboxleft {
+  width: 40%;
+  float:left;
+}
+.lightboxright {
+  width: 60%;
+  float:left;
+}
+.lightboxright iframe {
+  min-height: 390px;
+}
+.divtext {
+  margin: 36px;
+}
+@media (max-width: 800px) {
+  .lightboxleft {
+    width: 100%;
+  }
+  .lightboxright {
+    width: 100%;
+  }
+  .divtext {
+    margin: 12px;
+  }
+}
+</style>
+
+<!--END IMPORTING STYLES FOR HTML5BOXES -->
+
 </head>
  
 <body>
@@ -19,40 +60,29 @@
     </header>
     <div class="container">
         
-        <button type="button" id="alas" class="btn btn-primary btn-md">  Alas  </button>
-        <button type="button" id="ulti" class="btn btn-success btn-md">  La Ulti  </button>
-        <button type="button" id="nomas" class="btn btn-warning btn-md">  Mas no  </button>
-        <button type="button" id="pami" class="btn btn-danger btn-md">  Pa mi  </button>
+        <a href="video/LaCervezaMeDaAlas.mp4" class="html5lightboxcontainer btn btn-primary btn-md" title="La Cerveza me da alas">Cerveza Alas</a>
+        <a href="video/LaUltimaYPaCasa.mp4" class="html5lightboxcontainer btn btn-primary btn-md" title="La penul">La ultima</a>
+        <a href="video/MasNo.mp4" class="html5lightbox btn btn-primary btn-md" title="No Puedo mas">No Mas</a>
+        <a href="video/MeLaPido.mp4" class="html5lightbox btn btn-primary btn-md" title="Me la pido">Me la pido</a>
+
+    </div>
+    <br>
+    <div class="container">
+        
+        <a href="video/MeMueroDeHambre.mp4" class="html5lightbox btn btn-primary btn-md" title="Me muero de hambre">Hambre</a>
+        <a href="video/NideCoña.mp4" class="html5lightbox btn btn-primary btn-md" title="Ni de coña">No way</a>
+        <a href="video/OtraCerveza.mp4" class="html5lightbox btn btn-primary btn-md" title="Otra caña">Mas cerveza!</a>
+        <a href="video/PeaceLoveAndCerveza.mp4" class="html5lightbox btn btn-primary btn-md" title="Peace Love and cerveza">Osw.motto?</a>
+
         
     </div>
     <br>
     <div class="container">
         
-        <button type="button" id="hambre" class="btn btn-primary btn-md">Hambre</button>
-        <button type="button" id="noway" class="btn btn-success btn-md">No way</button>
-        <button type="button" id="masbirra" class="btn btn-warning btn-md">Birra++</button>
-        <button type="button" id="motto" class="btn btn-danger btn-md">Peace Love</button>
-        
-    </div>
-    <br>
-    <div class="container">
-        
-        <button type="button" id="quecorra" class="btn btn-primary btn-md">Corra el Ron</button>
-        <button type="button" id="si" class="btn btn-success btn-md">Voto SI</button>
-        <button type="button" id="ya" class="btn btn-warning btn-md">¿YA?</button>
-        <button type="button" id="random" class="btn btn-danger btn-md">ILUMINANOS</button>
-        
-    </div>
-    
-    <div class="container">
-        
-        <div class="align-center">
-            <video width="320" height="480" src="video/MeMueroDeHambre.mp4" type="video/mp4" controls autoplay>
-            <!--<source src="video/MeMueroDeHambre.mp4" type="video/mp4">-->
-              Your browser does not support the video tag.
-            </video>
-            
-        </div>
+        <a href="video/queCorraElRon.mp4" class="html5lightbox btn btn-primary btn-md" title="Que corra el ron">Que corra el ron</a>
+        <a href="video/votoSi.mp4" class="html5lightbox btn btn-primary btn-md" title="Voto Sí">Si</a>
+        <a href="video/YaTeLaHasBebido.mp4" class="html5lightbox btn btn-primary btn-md" title="Ya te lo has Bebido?">Ya?</a>
+
         
     </div>
     
